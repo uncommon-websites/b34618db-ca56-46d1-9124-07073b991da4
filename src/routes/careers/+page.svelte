@@ -23,22 +23,25 @@
 		"bg-primary-50 text-primary-600 dark:bg-primary-950 dark:text-primary-400 flex items-center justify-center rounded-full";
 
 	const benefits = [
-		{
-			title: "Flexible Work",
-			description: "Remote-first with flexible hours that respect work-life balance.",
-			icon: IconBriefcase
-		},
-		{
-			title: "Growth Opportunities",
-			description: "Continuous learning with mentorship and education stipends.",
-			icon: IconUsers
-		},
-		{
-			title: "Comprehensive Benefits",
-			description: "Health coverage, retirement plans, and generous paid time off.",
-			icon: IconHeart
-		}
-	];
+  {
+    title: "Impact at scale",
+    description:
+      "Serve leading law firms, Fortune 500s, and 45,000+ professionals in 44+ countries.",
+    icon: IconGlobe,
+  },
+  {
+    title: "Growth and learning",
+    description:
+      "Access mentorship, an annual professional development stipend, and direct collaboration with world-class experts.",
+    icon: IconUsers,
+  },
+  {
+    title: "Comprehensive support",
+    description:
+      "Full medical, dental, and vision; paid parental leave; daily office meals; flexible time off; and a competitive 401(k) match.",
+    icon: IconHeart,
+  },
+];
 
 	const openings: JobOpening[] = [
 		// Engineering
@@ -121,79 +124,97 @@
 	];
 
 	const employeeTestimonials = [
-		{
-			name: "Michael Chen",
-			position: "Senior Developer",
-			company: "Engineering Team",
-			quote:
-				"Working here has given me the opportunity to tackle challenging problems while maintaining a healthy work-life balance. The team culture is supportive and collaborative.",
-			image:
-				"https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
-		},
-		{
-			name: "Priya Sharma",
-			position: "Product Designer",
-			company: "Design Team",
-			quote:
-				"The creative freedom and opportunity to influence product decisions makes this the best place I've ever worked. I'm constantly learning and growing.",
-			image:
-				"https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
-		},
-		{
-			name: "Marcus Johnson",
-			position: "Marketing Lead",
-			company: "Marketing Team",
-			quote:
-				"I joined three years ago and have grown tremendously. The leadership truly invests in your development and the work environment is both challenging and supportive.",
-			image:
-				"https://images.unsplash.com/photo-1531384441138-2736e62e0919?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
-		}
-	];
+  {
+    name: "Michael Chen",
+    position: "Senior Developer",
+    company: "Engineering Team",
+    quote:
+      "At Harvey, you feel the energy of a team that values your ideas. I love the culture of collaboration—everyone genuinely wants you to succeed, and that motivates me to do my best work every day.",
+    image:
+      "/generated/image-a-professional-headshot-of-an-asian-male.webp"
+  },
+  {
+    name: "Priya Sharma",
+    position: "Product Designer",
+    company: "Design Team",
+    quote:
+      "Joining Harvey has been a turning point for my growth. There are so many opportunities to learn across disciplines, and leadership encourages you to take on new challenges—you’re never stuck in one lane.",
+    image:
+      "/generated/image-a-professional-headshot-of-a-south-asian.webp"
+  },
+  {
+    name: "Marcus Johnson",
+    position: "Marketing Lead",
+    company: "Marketing Team",
+    quote:
+      "The work environment here is welcoming, fast-paced, and inspiring. We celebrate big wins as a team, but it’s the everyday support and open feedback that really set Harvey apart.",
+    image:
+      "/generated/image-a-professional-headshot-of-a-black-male-.webp"
+  }
+];
+
 
 	const processSteps = [
-		{
-			step: 1,
-			title: "Apply",
-			description:
-				"Submit your application through our careers portal with your resume and portfolio."
-		},
-		{
-			step: 2,
-			title: "Interview",
-			description: "Meet with our team to discuss your experience, skills, and career aspirations."
-		},
-		{
-			step: 3,
-			title: "Welcome aboard",
-			description: "Join our team and start your journey building the future with us."
-		}
-	];
+  {
+    step: 1,
+    title: "Apply online",
+    description:
+      "Submit your resume and answer a few role-specific questions—no formal cover letter required.",
+  },
+  {
+    step: 2,
+    title: "Intro call",
+    description:
+      "Connect with our recruiter for an overview of Harvey, your experience, and your interests. Get answers to your questions early.",
+  },
+  {
+    step: 3,
+    title: "Skills & culture interviews",
+    description:
+      "Meet team members for role-relevant discussions. Technical talent may complete a practical challenge; all interviews include time for your questions.",
+  },
+  {
+    step: 4,
+    title: "Offer & onboarding",
+    description:
+      "Receive feedback quickly—within a week in most cases. If you join us, we offer a comprehensive and personalized onboarding experience.",
+  },
+];
 
 	const values = [
-		{
-			icon: IconHeart,
-			title: "Passion",
-			description: "We're driven by a shared passion for innovation and excellence."
-		},
-		{
-			icon: IconUsers,
-			title: "Collaboration",
-			description: "We believe in teamwork and collaboration to achieve great things."
-		},
-		{
-			icon: IconGlobe,
-			title: "Global Impact",
-			description: "We're committed to making a positive impact on the world."
-		}
-	];
+  {
+    icon: IconHeart,
+    title: "Excellence & rigor",
+    description:
+      "We're committed to expert-level work, high standards, and ongoing learning—because details matter in our field.",
+  },
+  {
+    icon: IconUsers,
+    title: "Collaboration & inclusion",
+    description:
+      "We support each other, embrace diversity of background and thought, and tackle challenges together—no one works alone at Harvey.",
+  },
+  {
+    icon: IconGlobe,
+    title: "Global perspective",
+    description:
+      "With teams and customers in 50+ countries, we value cultural context, continuous feedback, and sharing knowledge across borders.",
+  },
+  {
+    icon: IconBriefcase,
+    title: "Customer-first mindset",
+    description:
+      "We approach every challenge with white-glove service, responsiveness, and direct access to decision-makers.",
+  },
+];
 </script>
 
 <!-- Hero Section -->
 
 <SecondaryHero
-	title="Join our team of innovators"
-	subtitle="We're looking for passionate people to help us build the future of digital experiences. Discover your next opportunity with us."
-	imageSrc="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+	title="Advance legal mastery through AI collaboration"
+	subtitle="Grow with a team driving real change in law and technology"
+	imageSrc="/generated/image-a-bright-modern-office-with-a-diverse-te.webp"
 />
 
 <!-- Why Join Us Section -->

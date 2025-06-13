@@ -35,116 +35,133 @@ Please update features according to the company's product offering. Do not remov
 
 	// Props
 	const {
-		title = "Simple, transparent pricing",
-		subtitle = "Choose the plan that works best for your needs",
-		tierNames = ["Starter", "Pro", "Enterprise"],
+		title = "The professional-grade AI platform for legal expertise",
+		subtitle = "Flexible plans designed for law firms, in-house legal teams, and professional services. Every tier includes Harvey’s secure, domain-specific AI for legal work.",
+		tierNames = ["Professional", "Business", "Enterprise"],
 		features = [
 			{
-				name: "Projects",
+				name: "Best for",
 				tiers: {
-					Starter: "5",
-					Pro: "Unlimited",
-					Enterprise: "Unlimited"
+					Professional: "Pilot programs or small teams",
+					Business: "Large legal teams or practice groups",
+					Enterprise: "Organization-wide, advanced controls"
 				}
 			},
 			{
-				name: "Team members",
+				name: "Assistant (domain-specific AI)",
 				tiers: {
-					Starter: "1",
-					Pro: "10",
-					Enterprise: "Unlimited"
-				}
-			},
-			{
-				name: "Storage",
-				tiers: {
-					Starter: "1GB",
-					Pro: "10GB",
-					Enterprise: "Unlimited"
-				}
-			},
-			{
-				name: "API access",
-				tiers: {
-					Starter: false,
-					Pro: true,
+					Professional: true,
+					Business: true,
 					Enterprise: true
 				}
 			},
 			{
-				name: "Custom domains",
+				name: "Vault (secure document workspace)",
 				tiers: {
-					Starter: false,
-					Pro: true,
+					Professional: "Up to 1,000 docs per Vault",
+					Business: "Up to 10,000 docs per Vault",
+					Enterprise: "Unlimited"
+				}
+			},
+			{
+				name: "Knowledge (cited legal/tax research)",
+				tiers: {
+					Professional: true,
+					Business: true,
 					Enterprise: true
 				}
 			},
 			{
-				name: "Analytics",
+				name: "Workflows (AI-powered process automation)",
 				tiers: {
-					Starter: "Basic",
-					Pro: "Advanced",
-					Enterprise: "Advanced"
+					Professional: false,
+					Business: "Prebuilt workflows",
+					Enterprise: "Fully custom workflows"
 				}
 			},
 			{
-				name: "Support response time",
+				name: "Legal DMS & SharePoint integrations",
 				tiers: {
-					Starter: "24 hours",
-					Pro: "4 hours",
-					Enterprise: "1 hour"
-				}
-			},
-			{
-				name: "Dedicated account manager",
-				tiers: {
-					Starter: false,
-					Pro: false,
+					Professional: false,
+					Business: true,
 					Enterprise: true
 				}
 			},
 			{
-				name: "SLA",
+				name: "Microsoft Word add-in",
 				tiers: {
-					Starter: false,
-					Pro: false,
-					Enterprise: "99.9%"
+					Professional: false,
+					Business: true,
+					Enterprise: true
+				}
+			},
+			{
+				name: "Security/compliance (SOC2, GDPR, SSO, audit logs)",
+				tiers: {
+					Professional: true,
+					Business: true,
+					Enterprise: "+ Data residency controls"
+				}
+			},
+			{
+				name: "Support",
+				tiers: {
+					Professional: "Email support",
+					Business: "24/7 white glove support",
+					Enterprise: "Dedicated CSM & enterprise support"
+				}
+			},
+			{
+				name: "Custom workflows & consulting",
+				tiers: {
+					Professional: false,
+					Business: false,
+					Enterprise: true
+				}
+			},
+			{
+				name: "Pricing",
+				tiers: {
+					Professional: "Contact sales",
+					Business: "Contact sales",
+					Enterprise: "Custom quote"
 				}
 			}
 		],
 		tiers = [
 			{
-				name: "Starter",
-				monthlyPrice: 9.99,
-				yearlyPrice: 7.99, // 20% savings
-				description: "Perfect for individuals and small projects",
+				name: "Professional",
+				monthlyPrice: null,
+				yearlyPrice: null,
+				description: "For legal teams piloting Harvey or supporting a small group. Core domain-specific AI features with secure document analysis and cited research.",
 				features: [
-					"Up to 5 projects",
-					"Basic analytics",
-					"24-hour support response time",
-					"1GB storage"
+					"Domain-specific AI Assistant",
+					"Analyze up to 1,000 docs per Vault",
+					"Cited Knowledge research",
+					"SOC2, GDPR, SSO, audit logs",
+					"Email support"
 				],
 				cta: {
-					label: "Get started",
-					href: "/signup?plan=starter"
+					label: "Request demo",
+					href: "/contact"
 				}
 			},
 			{
-				name: "Pro",
-				monthlyPrice: 29.99,
-				yearlyPrice: 23.99, // 20% savings
-				description: "For growing teams and businesses",
+				name: "Business",
+				monthlyPrice: null,
+				yearlyPrice: null,
+				description: "For large practice groups or departments. Full Harvey platform, scalable Vaults, automated workflows, white glove onboarding, advanced integrations.",
 				features: [
-					"Unlimited projects",
-					"Advanced analytics",
-					"4-hour support response time",
-					"10GB storage",
-					"Custom domains",
-					"Team collaboration tools"
+					"All Professional features",
+					"Up to 10,000 docs per Vault",
+					"Prebuilt AI Workflows",
+					"Microsoft Word add-in",
+					"DMS/SharePoint integrations",
+					"24/7 white glove support"
 				],
 				cta: {
-					label: "Get started",
-					href: "/signup?plan=pro"
+					label: "Request demo",
+					href: "/contact"
 				},
 				highlight: true
 			},
@@ -152,15 +169,14 @@ Please update features according to the company's product offering. Do not remov
 				name: "Enterprise",
 				monthlyPrice: null,
 				yearlyPrice: null,
-				description: "For large organizations with specific needs",
+				description: "For firmwide or enterprise-wide deployment. Unlimited scale, full custom workflows, on-prem/data residency options, dedicated CSM, priority support, custom integrations.",
 				features: [
-					"Everything in Pro",
-					"Dedicated account manager",
-					"1-hour support response time",
-					"Unlimited storage",
-					"Advanced security features",
-					"Custom integrations",
-					"99.9% uptime SLA"
+					"All Business features",
+					"Unlimited Vaults",
+					"Fully custom workflows & consulting",
+					"Data residency controls",
+					"Dedicated CSM & priority SLAs",
+					"Custom integrations"
 				],
 				cta: {
 					label: "Contact sales",
@@ -175,6 +191,7 @@ Please update features according to the company's product offering. Do not remov
 		features?: PricingFeature[];
 		tierNames?: string[];
 		caption?: string;
+
 	} = $props();
 
 	// State
@@ -356,6 +373,11 @@ Please update features according to the company's product offering. Do not remov
 		</div>
 	</div>
 	<LogoScroller />
+
+<!--
+Harvey supports the global legal teams at Comcast, Verizon, Microsoft, PwC, Adecco Group, Bridgewater, and over 250 leading firms and companies around the world.
+The future of legal work is here—secure, scalable, client-ready. Start with the fully secure, audit-ready AI platform designed for legal and professional service leaders. Request a demo to see how Harvey can support your most trusted work.
+-->
 </section>
 
 <style lang="postcss">
