@@ -72,7 +72,7 @@ It should ALWAYS have between 3 and 5 customers!
 	<header
 		class={[
 			"section-px container mx-auto grid items-end gap-16 gap-y-9 text-balance",
-			centered ? "place-items-center py-16 text-center" : "mb-12 pt-24 xl:grid-cols-[1fr_auto]"
+			centered ? "place-items-center section-py text-center" : "section-mb-sm section-pt xl:grid-cols-[1fr_auto]"
 		]}
 		data-enter-container
 	>

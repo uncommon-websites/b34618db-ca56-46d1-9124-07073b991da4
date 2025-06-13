@@ -23,7 +23,8 @@
 </script>
 
 <article
-	class="bg-card hover:bg-sidebar-primary-foreground hover:text-primary-900 border-border flex flex-col rounded-(--radius) border p-4 px-5 text-pretty transition duration-300 ease-out lg:p-5 lg:px-6 {customClass}"
+	class="bg-card hover:bg-card-hover border-border flex flex-col text-pretty transition duration-300 ease-out {customClass}"
+	style="border-radius: var(--radius); border: 1px solid var(--color-border); padding: 1rem 1.25rem;"
 >
 	{#if icon || imageSrc}
 		<div class="mb-8">
@@ -36,8 +37,8 @@
 						style="border-radius: max(2px, calc(var(--radius) - 1rem));"
 					/>
 					<div
-						class="absolute top-3 left-3 bg-white/90 p-1.5 backdrop-blur-sm"
-						style="border-radius: max(2px, calc(var(--radius) - 1.25rem));"
+						class="absolute top-3 left-3 p-1.5 backdrop-blur-sm"
+						style="border-radius: var(--radius-sm); background-color: var(--color-background);"
 					>
 						<svelte:component
 							this={icon}
@@ -64,6 +65,6 @@
 		<h3 class="text-title3 mb-2">
 			{title}
 		</h3>
-		<p class="text-body max-w-prose opacity-60">{description}</p>
+		<p class="text-body max-w-prose text-muted-foreground">{description}</p>
 	</div>
 </article>

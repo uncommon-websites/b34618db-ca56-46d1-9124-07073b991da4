@@ -76,7 +76,7 @@
 
 	<div class="text-title1 container-sm gap relative mx-auto grid">
 		{#each segments as paragraph, i}
-			<p class="mb-[1.5em] last:mb-0">
+			<p class="mb-6 last:mb-0">
 				{#each paragraph.split(" ").filter(Boolean) as word}
 					<span class="word relative inline-block transition duration-150 ease-out">{word}</span
 					>{" "}
