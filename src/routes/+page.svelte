@@ -7,16 +7,49 @@
 	import CallToAction from "$lib/components/layout/CallToAction.svelte";
 	import AboutTeaser from "$lib/components/layout/AboutTeaser.svelte";
 	import LogoScroller from "$lib/components/layout/LogoScroller.svelte";
-	import Hero from "$lib/components/layout/hero-sections/Hero.svelte";
+	import CustomerCardHero from "$lib/components/layout/hero-sections/CustomerCardHero.svelte";
 </script>
 
-<Hero
-	title="Elevate your business with thoughtful design"
-	subtitle="Solutions that enhance user experience, and improve visual communication."
-	imageSrc="/sample.png"
-	generating
+<CustomerCardHero
+  centered={true}
+  title="Trusted by the world’s leading legal teams"
+  subtitle="Harvey powers high-stakes work for top law firms and global enterprises, built with deep domain expertise and proven across complex legal systems."
+  customers={[
+    {
+      name: "Olivia Martinez",
+      position: "Partner, Litigation",
+      imageSrc: "/generated/image-a-confident-female-legal-professional-wi.webp"
+    },
+    {
+      name: "David Kim",
+      position: "Chief Legal Officer",
+      imageSrc: "/generated/image-a-professional-male-executive-in-a-sharp.webp"
+    },
+    {
+      name: "Sophia Wang",
+      position: "Director of Innovation",
+      imageSrc: "/generated/image-a-female-innovation-leader-smiling-warml.webp"
+    },
+    {
+      name: "James Patel",
+      position: "Managing Attorney",
+      imageSrc: "/generated/image-a-male-attorney-in-a-tailored-suit-stand.webp"
+    },
+    {
+      name: "Claire Dubois",
+      position: "Business Consultant",
+      imageSrc: "/generated/image-a-female-business-consultant-standing-co.webp"
+    }
+  ]}
 />
-<LogoScroller label="" generating />
+<LogoScroller
+	label="Trusted by industry leaders"
+	logoUrls={[
+    'https://logo.clearbit.com/pwc.com',
+    'https://logo.clearbit.com/comcast.com',
+    'https://logo.clearbit.com/verizon.com'
+  ]}
+/>
 
 <Summary
 	generating
